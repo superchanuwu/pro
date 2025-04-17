@@ -1,5 +1,5 @@
 # ULTRAXRAY
-** ULTRAXRAY-lite **
+**ULTRAXRAY-lite**
 Kenapa yang versi lite butuh DNS local + fake dns, tanpa dns local,tanpa fake dns net:ERR_NAME_NOT_RESOLVE
 Jawaban nya: 
 
@@ -16,6 +16,8 @@ Client tetap dapat net::ERR_NAME_NOT_RESOLVED karena tidak ada resolve melalui t
 Di sisi VPN atau tunnel-mu (misal pakai tun2socks atau proxy websocket):
 Harus intercept DNS (UDP:53) dan arahkan ke local fake DNS (misal 127.0.0.1:5353).
 Fake DNS kemudian forward via WebSocket -> Worker -> DoH.
+
+**ULTRAXRAY-pro**
 
 
 
