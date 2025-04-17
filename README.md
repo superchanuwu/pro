@@ -4,8 +4,8 @@
 Kenapa yang versi lite butuh DNS local + fake dns, tanpa dns local,tanpa fake dns akan jadi "netERR_NAME_NOT_RESOLVE".
 Jawaban nya adalah: 
 
-1. Local Fake DNS.
----
+**Local Fake DNS**
+
 Karena di client (entah itu perangkat, router, atau VPN) query DNS default akan tetap ke 8.8.8.8, 1.1.1.1, atau DNS ISP.
 Kamu perlu fake DNS agar:
 Semua DNS UDP disedot ke proxy (misal melalui tun2socks / redsocks / transparent proxy DNS hijack).
@@ -14,14 +14,20 @@ Kalau tidak:
 DNS tetap dilewatkan ke upstream biasa.
 Client tetap dapat net::ERR_NAME_NOT_RESOLVED karena tidak ada resolve melalui tunnel.
 
-3. Integrasi. 
+---
+
+**Integrasi**
+
 Di sisi VPN atau tunnel-mu (misal pakai tun2socks atau proxy websocket):
 Harus intercept DNS (UDP:53) dan arahkan ke local fake DNS (misal 127.0.0.1:5353).
 Fake DNS kemudian forward via WebSocket -> Worker -> DoH.
+
 ---
+
 **ULTRAXRAY-pro**
----
+
 abc
+
 ---
 
 # Siren
