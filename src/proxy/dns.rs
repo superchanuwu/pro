@@ -7,7 +7,6 @@ use std::time::Duration;
 /// DNS over HTTPS with fallback to Google + UDP
 pub async fn doh(req_wireformat: &[u8]) -> Result<Vec<u8>> {
     let client = Client::builder()
-        .timeout(Duration::from_secs(3))
         .build()?;
 
     let endpoints = [
