@@ -14,6 +14,8 @@ Kalau tidak:
 DNS tetap dilewatkan ke upstream biasa.
 Client tetap dapat net::ERR_NAME_NOT_RESOLVED karena tidak ada resolve melalui tunnel.
 
+Dengan Local fake dns kamu tetap bisa internet tanpa masalah kecuali akses udp dan game online karena tidak semua game online mendukung fake dns
+
 ---
 
 **Integrasi**
