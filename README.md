@@ -17,7 +17,9 @@ Di sisi VPN atau tunnel-mu (misal pakai tun2socks atau proxy websocket):
 Harus intercept DNS (UDP:53) dan arahkan ke local fake DNS (misal 127.0.0.1:5353).
 Fake DNS kemudian forward via WebSocket -> Worker -> DoH.
 
+
 **ULTRAXRAY-pro**
+abc
 
 
 
