@@ -1,8 +1,7 @@
 # ULTRAXRAY
 **ULTRAXRAY-lite**
 ---
-Kenapa yang versi lite butuh DNS local + fake dns, tanpa dns local,tanpa fake dns akan kena netERR_NAME_NOT_RESOLVE
-_
+Kenapa yang versi lite butuh DNS local + fake dns, tanpa dns local,tanpa fake dns akan jadi "netERR_NAME_NOT_RESOLVE".
 Jawaban nya adalah: 
 1. Local Fake DNS
 Karena di client (entah itu perangkat, router, atau VPN) query DNS default akan tetap ke 8.8.8.8, 1.1.1.1, atau DNS ISP.
