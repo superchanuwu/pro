@@ -1,4 +1,4 @@
-name = "tanpadns"
+name = "pro"
 type = "rust"
 main = "build/worker/shim.mjs"
 compatibility_date = "2024-05-23"
@@ -8,8 +8,8 @@ usage_model = "bundled"
 account_id = "04631510c42a6977060d05d134c6d815"
 
 [[kv_namespaces]]
-binding = "tanpadns"
-id = "1364ab6d6e8e4d279f5c9d7d84c6e2c9"
+binding = "pro"
+id = "b171d9b6f0d849f7ad977600d917b7d9"
 
 [build]
 command = "cargo install worker-build && worker-build --release"
