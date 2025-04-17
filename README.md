@@ -1,7 +1,7 @@
 # ULTRAXRAY
 **ULTRAXRAY-lite**
 ---
-Kenapa yang versi lite butuh DNS local + fake dns, tanpa dns local,tanpa fake dns net:ERR_NAME_NOT_RESOLVE
+Kenapa yang versi lite butuh DNS local + fake dns, tanpa dns local,tanpa fake dns akan kena net:ERR_NAME_NOT_RESOLVE
 
 Jawaban nya adalah: 
 1. Local Fake DNS
